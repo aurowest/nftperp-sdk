@@ -115,8 +115,16 @@ export type TotalPositionSizeResponse = {
 };
 
 export type BalancesResponse = {
-    eth: string;
-    weth: string;
+    arb: {
+        eth: string;
+        weth: string;
+        approvedAmount: string;
+    };
+    blast: {
+        eth: string;
+        weth: string;
+        approvedAmount: string;
+    };
 };
 
 export interface TxInfo {
